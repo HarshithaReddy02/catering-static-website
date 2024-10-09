@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+body {
+    line-break: 1.8;
+    color: #2f427a;
+    font-size: 15px;
+    font-family: 'Lato', 'san-serif';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #11245a;
+
+}
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+img {
+    width: 100%;
+}
+
+small {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(1, 1, 36, 0.137);
+}
+
+.navbar .nav-link {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link .active {
+    color: rgb(143, 89, 97);
+}
+
+.logo-text {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #11245a;
+}
+
+#home {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background: linear-gradient(#253a7449, #1130832f), url(../IMG/img1.jpg);
+    display: flex;
+    align-items: center;
+}
+
+#home p {
+    max-width: 550px;
+    margin: 18px auto;
+}
+
+.stylebutton {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(225 129 195 / 69%);
+    padding: 12px 28px;
+    border-radius: 2px;
+}
+
+.stylebutton:hover {
+    background-color: rgba(138, 15, 99, 0.69);
+    color: white;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-intro .hline {
+    width: 120px;
+    height: 2px;
+    background-color: rgb(175, 171, 171);
+    margin: 16px auto 0 auto;
+}
+
+.iconstyle {
+    height: 100px;
+    width: 100px;
+}
+
+.portfolio-item {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.portfolio-item img,
+.portfolio-item .portfolio-overlay {
+    transition: all 0.4s ease;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #11245ab4;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    opacity: 0;
+}
+
+.portfolio-overlay h3,
+.portfolio-overlay h6 {
+    color: white;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.team-member {
+    background-color: #11245a;
+}
+
+.team-member .hline {
+    height: 2px;
+    width: 70px;
+    margin: 16px auto;
+    color: white;
+}
+
+.team-member .team-member-img img,
+.team-member .team-member-img .social-icons {
+    transition: all 0.4s ease;
+}
+
+.team-member .team-member-img img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member .team-member-img .social-icons {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(126, 46, 102);
+    /* bottom: -60px; */
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+
+
+}
+
+.team-member .team-member-img .social-icons a {
+    width: 30px;
+    height: 30px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.team-member .team-member-img .social-icons a:hover {
+    background-color: white;
+    color: rgb(148, 21, 131);
+}
+
+#cta {
+    background-color: rgb(126, 46, 102);
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-section {
+       background: #1c2654;
+    position: relative;
+}
+
+.footer-cta {
+    border-bottom: 1px solid #373636;
+}
+
+.single-cta i {
+    color: #ff5e14;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+}
+
+.cta-text {
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.cta-text h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.cta-text span {
+    color: #757575;
+    font-size: 15px;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 330px;
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    max-width: 200px;
+}
+
+.footer-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #7e7e7e;
+    line-height: 28px;
+}
+
+.footer-social-icon span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+
+.facebook-bg {
+    background: #3B5998;
+}
+
+.twitter-bg {
+    background: #55ACEE;
+}
+
+.google-bg {
+    background: #DD4B39;
+}
+
+.footer-widget-heading h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #ff5e14;
+}
+
+.footer-widget ul li {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+    color: #ff5e14;
+}
+
+.footer-widget ul li a {
+    color: #878787;
+    text-transform: capitalize;
+}
+
+.subscribe-form {
+    position: relative;
+    overflow: hidden;
+}
+
+.subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
+    color: #fff;
+}
+
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background:#9f1d83;
+    padding: 13px 20px;
+    border: 1px solid white;
+    top: 0;
+}
+
+.subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+}
+
+.copyright-area {
+    background: #202020;
+    padding: 25px 0;
+}
+
+.copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+}
+
+.copyright-text p a {
+    color: #ff5e14;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+    color: rgb(115, 34, 117);
+}
+
+.footer-menu li a {
+    font-size: 14px;
+    color: #878787;
+}
